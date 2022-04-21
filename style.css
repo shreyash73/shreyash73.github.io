@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300');
+*{
+    margin:.0;
+    padding:.0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.6rem 2.5rem;
+    position:fixed;
+    opacity: 100%;
+}
+.nav img{
+    width: 15%;
+}
+.nav h2{
+    
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+}
+#item{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#item li{
+    list-style: none;
+    padding-right: 50px;
+}
+#item li a{
+    text-decoration: none;
+    font-weight: 500rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: black;
+}
+#item li a:hover{
+    color: #ff5733;
+    cursor: pointer;
+}
+#item .icon i{
+    color: rgb(0, 0, 0);
+    padding-right: 30px;
+    font-weight: bolder;
+}
+#item .icon i:hover{
+    color: #ff5733;
+    cursor: pointer;
+}
+#bar{
+    font-weight: lighter;
+    font-size: 1.5rem;
+    display: none;
+}
+.back{
+    background-image: url(bgm.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 2rem;
+}
+.mid .btn{
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+}
+.btn .simple{
+    text-transform: uppercase;
+    align-items: center;
+    padding-left: 0.5rem;
+    color: aliceblue;
+    padding-right: 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    border: 1.5px solid white;
+    background-color: black;
+    border-radius: 3px;
+}
+.btn .simple:hover{
+    color: #ff5733;
+}
+.btn a.border{
+    padding: 0.8rem;
+    border: 1.5px solid #ff5733;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 3px;
+}
+.btn a.border:hover{
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid rebeccapurple;
+
+}
+.mid{
+    text-align: center;
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background-color: #171819;
+}
+.details h3,h6,h5{
+    color: #f0f3f5;
+}
+.details .one{
+    width: 45%;
+}
+.details .two{
+    width: 45%;
+    border-left: 1px solid #666262;
+    padding-left: 4rem;
+}
+.details .one h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+}
+.details .one h6{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 1.2rem;
+}
+.details .one h6{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+}
+.details .one p{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+}
+.details .two h3{
+    font-size: 2.5rem;
+}
+.details .two h5{
+    color: whitesmoke;
+    font-size: 1.1rem;
+}
+.details .two p{
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+.trainer{
+    background-color: #F9F9F9;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.trainer .about{
+    width: 39%;
+}
+.trainer .about h2{
+    font-size: 2.1rem;
+    padding-bottom: 1.1rem;
+
+}
+.trainer .people{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 57%;
+}
+.trainer .about p{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+.trainer .people .team1{
+    width: 45%;
+    height: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow:
+  3.1px 3.2px 2.2px rgba(0, 0, 0, 0.048),
+  7.4px 7.6px 5.3px rgba(0, 0, 0, 0.069),
+  13.9px 14.3px 10px rgba(0, 0, 0, 0.085),
+  24.8px 25.5px 17.9px rgba(0, 0, 0, 0.101),
+  46.4px 47.6px 33.4px rgba(0, 0, 0, 0.122),
+  111px 114px 80px rgba(0, 0, 0, 0.17)
+;
+}
+.trainer .people .team1 .img img{
+    width: 100%;
+    align-items: center;
+    object-fit: cover;
+
+}
+.trainer .people{
+    align-items: center;
+    justify-content: center;
+}
+.trainer .people .team1 .name,.trainer .people .team1 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.trainer .people .team1 .name,.trainer .people .team1 .pro{
+    padding: 5px 20px 0 20px;
+}
+.trainer .people .team1 .teamdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+.trainer .people .team1 .name h4{
+    color: #212529;
+    font-size: 1.5rem;
+}
+.trainer .people .team1 .name i,.trainer .people .team1 .pro p{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 8rem;
+}
+.class .para{
+    font-size: 1.3rem;
+    color: #95a5a6;
+    padding-bottom: 6px;
+    text-align: center;
+}
+.class .h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 50px;
+    color: #222;
+    text-align: center;
+}
+.class .classMenu .team1{
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow:
+  3.1px 3.2px 2.2px rgba(0, 0, 0, 0.048),
+  7.4px 7.6px 5.3px rgba(0, 0, 0, 0.069),
+  13.9px 14.3px 10px rgba(0, 0, 0, 0.085),
+  24.8px 25.5px 17.9px rgba(0, 0, 0, 0.101),
+  46.4px 47.6px 33.4px rgba(0, 0, 0, 0.122),
+  111px 114px 80px rgba(0, 0, 0, 0.17)
+;
+}
+.class .classMenu .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+.class .classMenu .team1 .name,.trainer .people .team1 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.class .classMenu .team1 .name,.class .classMenu .team1 .pro{
+    padding: 5px 20px 0 20px;
+}
+.class .classMenu .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+.class .classMenu .team1 .teamDetails .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px 0 30px;
+
+}
+.class .classMenu .team1 .teamDetails .name .nameDetails h4{
+    color: #212529;
+    font-size: 1.7rem;
+}
+.class .classMenu .team1 .teamDetails .name .nameDetails p{
+    color: #212529;
+    font-size: 1.1rem;
+}
+.class .classMenu .team1 .pro p{
+    font-size: 1.1rem;
+    color: #666262;
+}
+.class .classMenu .team1 .pro{
+    padding: 15px 30px 30px 30px;
+}
+.class .classMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts{
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contacts .form{
+    width: 45%;
+}
+.contacts .form h2{
+    font-size: 2rem;
+    color: #212529;
+    width: 100%;
+}
+.contacts .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start ;
+}
+.contacts .form .submit input,.contacts .form .submit textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #95a5a6;
+    outline: none;
+    margin: 13px 0;
+}
+.contacts .form .submit input:focus,.contacts .form .submit textarea:focus{
+    border: 1px solid #111;
+}
+.contacts .form .submit input::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+.contacts .form .submit textarea::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+.contacts .form .submit button{
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+.contacts .form .submit button:hover{
+    color: #ff5733;
+}
+.contacts .map {
+    width: 45%;
+}
+.contacts .map iframe{
+     width: 100%;
+}
+.contacts .map h2{
+    font-size: 2rem;
+    color: #212529;
+    width: 100%;
+}
+.footer{
+    border-top: 1px solid #ecf0f1;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 1042px){
+    .nav{
+        padding: 1rem 4.5rem;
+    }
+    .nav img{
+        width: 15%;
+        
+    }
+    .nav h2{
+
+        font-size: 1.4rem;
+    }
+    #item li{
+        padding-right: 30px;
+    }
+    #item li a{
+        font-size: 0.9rem;
+    }
+    #item .icon i{
+        padding-right: 20px;
+    }
+    .class .classMenu .team1 .teamDetails .name .nameDetails h4{
+        font-size:1.4rem;
+    }
+    .class .classMenu .team1 .teamDetails .name .nameDetails p{
+        font-size: 1rem;
+    }
+
+}
+@media screen and (max-width: 991px){
+    .nav{
+        padding: 1rem 3rem;
+    }
+    .nav h2{
+        font-size: 1.6rem;
+    }
+    #item{
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        background: rgba(0, 0, 0, 0.8);
+        right: -300px;
+        z-index: 100000;
+        margin-top: 4.2rem;
+        transition: 0.5s;
+
+    }
+    #item li{
+        padding-right: 0px;
+        padding: 4px 0;
+    }
+    #item li a{
+        font-size: 1.2rem;
+    }
+    #item .icon{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #item .icon i{
+        padding: 0 15px 0 15px;
+    }
+    #bar{
+        display: initial;
+        cursor: pointer;
+    }
+    .mid p{
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+    .mid h2{
+        font-size: 2.5rem;
+    }
+    .mid .btn{
+        margin-top: 1.5rem;
+    }
+    .btn .simple{
+       padding: 0.7rem 1.4rem;
+    }
+    .btn a.border{
+        padding: 0.7rem 1.4rem;
+    }
+    .details{
+        padding: 6rem 7rem;
+    }
+    .details .one{
+        width: 50%;
+    
+    }
+    .details .two{
+        padding-left: 3.5rem;
+    
+    }
+    .details .one h3{
+        font-size: 2rem;
+    }
+    .details .one p{
+        font-size: 1.1rem;
+        padding-bottom: 2.2rem;
+    }
+    .details .two h3{
+        font-size: 2rem;
+            
+    }
+    .details .two h5{
+        font-size: 1rem;
+    }
+    .details .two p{
+        font-size: 1rem;
+    }
+    .trainer{
+        padding: 6rem 7rem;
+    }
+    .trainer .about h2{
+        font-size: 2rem;
+    }
+    .trainer .about p{
+        font-size: 1rem;
+    }
+    .trainer .people .team1{
+        width: 48%;
+    }
+
+    .trainer .people .team1 .name,.trainer .people .team1 .pro{
+        padding: 5px 10px 0 10px;
+    }
+    .trainer .people .team1 .name h4{
+        font-size: 1.1rem;
+    }
+    .trainer .people .team1 .name i,.trainer .people .team1 .pro p{
+        font-size: 1.1rem;
+    }
+    .class{
+        padding: 6rem;
+    }
+    .class .para{
+        font-size: 1.1rem;
+        padding-bottom: 4px;
+    }
+    .class .h2{
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }    
+    .class .classMenu .team1 .name,.trainer .people .team1 .pro{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .class .classMenu .team1 .name,.class .classMenu .team1 .pro{
+        padding: 5px 20px 0 20px;
+    }
+    .class .classMenu .team1 .teamDetails{
+        padding-bottom: 7px;
+    
+    }
+    .class .classMenu .team1 .teamDetails .name{
+        padding: 5px 15px 0 15px;
+    
+    }
+    .class .classMenu .team1 .teamDetails .name .nameDetails h4{
+        font-size: 1.2rem;
+    }
+    .class .classMenu .team1 .teamDetails .name .nameDetails p{
+        font-size: 1rem;
+    }
+    .class .classMenu .team1 .pro p{
+        font-size: 1rem;
+    }
+    .class .classMenu .team1 .pro{
+        padding: 15px 15px 30px 15px;
+    }
+    .contacts{
+        padding: 6rem;
+    }
+    .contacts .form h2{
+        font-size: 2rem;
+        padding-bottom: 7px;
+    }
+    .contacts .form .submit input,.contacts .form .submit textarea{
+        padding: 12px; 
+        margin: 10px 0;
+    }
+    .contacts .form .submit input::placeholder{
+        font-size: 1rem;
+    }
+    .contacts .form .submit textarea::placeholder{
+        font-size: 1rem;
+    }
+    .contacts .form .submit button{
+        width: 100%;
+        padding: 13px 0;
+    } 
+    .contacts .map h2{
+        font-size: 2rem;
+        padding-bottom: 7px;
+    }
+    .footer{
+        padding: 6rem;
+    }
+   
+}
+@media screen and (max-width: 768px){
+    .nav h2{
+        font-size: 1.5rem;
+    }
+    .back{
+        background-position: center;
+    }
+    .mid p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .mid h2{
+        font-size: 2.1rem;
+    }
+    .details{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .details .one{
+        width: 70%;
+    
+    }
+    .details .two{
+        border-left: 0;
+        padding-left: 0;
+        border-top: 1px solid #666262;
+        width: 70%;
+        padding-top:1.5rem ;
+    }
+    .trainer{
+        padding: 1rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .trainer .about{
+        width: 70%;
+        margin-bottom: 1.7rem;
+    }
+    .trainer .people{
+        width: 70%;
+    }
+    .trainer .people .team1{
+        width: 48%;
+
+    }
+    .class{
+        padding: 6rem;
+    }
+    .class .classMenu{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .class .classMenu .team1{
+        width: 65%;
+        margin-bottom: 20px;
+    }
+    .contacts{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacts .form{
+        width: 70%;
+        margin-bottom: 1.5rem;
+    }
+    .contacts .form h2{
+        font-size: 2.5rem;
+    }
+    .contacts .map{
+        width: 65%;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        padding: 4rem;
+    }
+}
+@media screen and (max-width: 496px){
+    .details{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .class .classMenu .team1
+    {
+        width: 110%;
+    }
+    .contacts .form 
+{
+    width: 100%;
+}
+
+    .contacts .form h2{
+        font-size: 1.8rem;
+    }
+    .contacts .map h2{
+        font-size: 1.8rem;
+    }
+    .contacts .map p{
+        font-size: 0.9rem;
+    }
+    .contacts .map {
+        width: 100%;
+    }
+}
