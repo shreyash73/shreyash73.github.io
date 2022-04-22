@@ -93,12 +93,25 @@ html{
     height: 100vh;
     background-size: cover;
 }
-.mid{
+.mid .imageL
+{
+    align-items: center;
     position: absolute;
-    top: 50%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%,-50%);
     margin-bottom: 2rem;
+
+}
+.mid{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 2rem;
+}
+.mid h2{
+    font-size: 1.5rem;
 }
 .mid .btn{
     margin-top: 0.5rem;
